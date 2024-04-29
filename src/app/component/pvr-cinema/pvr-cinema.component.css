@@ -1,64 +1,63 @@
 .background-image-container {
-    background-image: url('https://i.postimg.cc/PrYPxQdn/istockphoto-1361831751-612x612-1.jpg');
-    background-size: cover;
-    background-position: center;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .movie-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    max-width: 1200px;
-    padding: 20px;
-  }
-  
-  .movie-card {
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .movie-image {
-    height: 200px;
-    background-color: #f2f2f2;
-  }
-  
-  .movie-details {
-    padding: 10px;
-  }
-  
-  .movie-name {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  .movie-description {
-    font-size: 14px;
-    margin-bottom: 5px;
-  }
-  
-  .movie-info {
-    display: flex;
-    justify-content: space-between;
-    font-size: 12px;
-    color: #666;
-  }
-  .movie-card {
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-  }
-  
-  .movie-card:hover {
-    transform: scale(1.05);
-  }
-    
+  background-image: url('https://i.postimg.cc/Fsb4gDkY/movie-theater-background-1920-x-1080-pd3pa9h5eo0v69kv.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.movie-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  padding: 20px;
+  max-height: 80vh; /* Set a max height for the container */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+
+.movie-card {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-image {
+  height: 200px;
+  background-color: #f2f2f2;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+}
+
+.movie-details {
+  padding: 10px;
+}
+
+.movie-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.movie-description {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.movie-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #666;
+}
