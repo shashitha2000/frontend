@@ -1,0 +1,66 @@
+<mat-toolbar color="primary" class="mat-elevation-z8 shopping-eye-toolbar">
+     <!-- Add logo -->
+     <img src="https://i.postimg.cc/SKjRsrwn/Color-logo-no-background.png" alt="Logo" class="logo">
+    <button (click)="drawer.toggle()" mat-icon-button>
+        <mat-icon>menu</mat-icon>
+    </button>
+    <span class="spacer"></span>
+    <span class="shopping-eye">SHOPPING EYE</span>
+    <span class="spacer"></span>
+    <button routerLink="" mat-button>Home</button>
+    <span class="spacer"></span>
+    <!-- Add other menu items here -->
+    <span class="spacer"></span>
+    <!-- Replace the existing buttons with the updated code -->
+    <button *ngIf="!isLoggedIn" mat-icon-button matTooltip="Login" (click)="openDialog('login')">
+        <mat-icon>account_circle</mat-icon>
+    </button>
+    <span *ngIf="!isLoggedIn" class="toolbar-text">Login</span>
+    <button *ngIf="!isLoggedIn" mat-icon-button matTooltip="Signup" (click)="openDialog('register')">
+        <mat-icon>person_add</mat-icon>
+    </button>
+    <span *ngIf="!isLoggedIn" class="toolbar-text">Registration</span>
+    
+
+</mat-toolbar>
+<mat-toolbar color="primary" class="mat-elevation-z8 secondary-toolbar">
+    <!-- Add items for the secondary toolbar here -->
+    <button mat-button matTooltip="What's New">What's New<mat-icon>keyboard_arrow_down</mat-icon></button>
+    <button mat-button matTooltip="SHOP" routerLink="/shop">SHOP<mat-icon>keyboard_arrow_down</mat-icon></button>
+
+    <button mat-button matTooltip="DINE" routerLink="/dine">DINE<mat-icon>keyboard_arrow_down</mat-icon></button>
+
+    <button mat-button matTooltip="STAY" routerLink="/stay">STAY<mat-icon>keyboard_arrow_down</mat-icon></button>
+    <button mat-button matTooltip="PLAN YOUR VISIT">PLAN YOUR VISIT<mat-icon>keyboard_arrow_down</mat-icon></button>
+    <button mat-button matTooltip="SERVICES">SERVICES<mat-icon>keyboard_arrow_down</mat-icon></button>
+</mat-toolbar>
+<mat-toolbar color="primary" class="mat-elevation-z8 tertiary-toolbar">
+    <button mat-button matTooltip="Fashion Avenue">Fashion Avenue</button>
+    <button mat-button matTooltip="Fountain Views">Fountain Views</button>
+    <button mat-button matTooltip="PVR CINEMA" routerLink="/pvr-cinema">PVR CINEMA</button>
+
+    <button mat-button matTooltip="Offers" routerLink="offers">Offers</button>
+
+    <button mat-button matTooltip="Events">Events</button>
+</mat-toolbar>
+
+
+<mat-drawer-container autosize>
+    <mat-drawer #drawer opened="true" mode="side" position="start">
+        <mat-nav-list>
+            <mat-list-item>
+                <button routerLink="cart" mat-button><mat-icon>Cart</mat-icon> Cart</button>
+            </mat-list-item>
+            <mat-list-item>
+                <button routerLink="" mat-button><mat-icon>home</mat-icon> Home</button>
+            </mat-list-item>
+         
+        </mat-nav-list>
+    </mat-drawer>
+
+    <mat-drawer-content>
+        <div style="text-align: center; min-height: 600px;">
+            <router-outlet></router-outlet>
+        </div>
+    </mat-drawer-content>
+</mat-drawer-container>

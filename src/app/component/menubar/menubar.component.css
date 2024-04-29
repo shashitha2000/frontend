@@ -1,0 +1,101 @@
+.shopping-eye-toolbar {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center;
+  backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: #F8F8FF;
+    border-radius: 12px;
+    border: 1px solid rgba(59, 66, 77, 0.3);
+  color: #000000; /* Black font color */
+  font-family: 'Montserrat', sans-serif; /* Elegant font */
+  font-weight: 700; /* Bold font weight */
+  padding: 0 20px; /* Add padding for spacing */
+  
+  
+    height: 50px;
+}
+.shopping-eye-toolbar .toolbar-text {
+  font-size: 12px; /* Reduce font size */
+  margin-top: 5px; /* Spacing between icon and text */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Elegant font */
+  
+  
+}
+
+.shopping-eye-toolbar .logo {
+  position: absolute; /* Position the logo absolutely within the toolbar */
+  left: 100px; /* Adjust the left position of the logo */
+  height: 40px; /* Set the height of the logo */
+  width: auto; /* Let the width adjust proportionally */
+}
+
+.secondary-toolbar {
+  display: flex;
+    justify-content: space-around;
+    background-color: #F8F8FF;
+    
+    color: #000000; /* Black font color */
+    font-family: 'Montserrat', sans-serif; /* Elegant font */
+    font-weight: 700; /* Bold font weight */
+
+    padding: 4px 20px; /* Adjust the top and bottom padding */
+    height: 35px;
+}
+
+.secondary-toolbar button {
+  position: relative; /* Ensure the underline stays under the button */
+  border: none; /* Remove default button border */
+  background: none; /* Remove default button background */
+  cursor: pointer; /* Show pointer cursor on hover */
+}
+
+.secondary-toolbar button::before {
+  content: ''; /* Empty content */
+  position: absolute; /* Position relative to the button */
+  bottom: -2px; /* Place the underline below the button */
+  left: 0; /* Align the underline with the button */
+  width: 100%; /* Full width */
+  height: 2px; /* Height of the underline */
+  background-color: transparent; /* Transparent initially */
+  transition: background-color 0.3s; /* Smooth transition for color change */
+}
+
+.secondary-toolbar button:hover::before {
+  background-color: #000000; /* Black underline on hover */
+}
+.spacer {
+  flex: 1;
+}
+
+.shopping-eye {
+  font-size: 24px; /* Adjust the font size as needed */
+  margin-left:450px;
+}
+
+.tertiary-toolbar {
+  display: flex;
+  justify-content: space-around;
+  height: 35px;
+  background-color: black; /* Pearl white background color */
+  color: white; /* Black font color */
+  font-family: 'Montserrat', sans-serif; /* Elegant font */
+  font-weight: 700; /* Bold font weight */
+  
+  border: 0.5px solid #000000; /* Black border */
+  padding: 2px 20px; /* Adjust the top and bottom padding */
+}
+
+.tertiary-toolbar button {
+  position: relative; /* Ensure the underline stays under the button */
+  border: none; /* Remove default button border */
+  background: none; /* Remove default button background */
+  cursor: pointer; /* Show pointer cursor on hover */
+  font-size: 12px; /* Adjust the font size */
+  padding: 0 10px; /* Adjust the left and right padding */
+    margin: 0; /* Remove default margin */
+}
+.tertiary-toolbar button:hover {
+  color: #ffffff; /* White font color on hover */
+  background-color: #d7cfcf; /* Black background color on hover */
+}

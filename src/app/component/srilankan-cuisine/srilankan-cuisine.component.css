@@ -1,0 +1,61 @@
+.background-image-container {
+    background-image: url('https://i.postimg.cc/j2hPxCx0/a84854c0-6de2-4998-8f73-061cf9eabbb5.png');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .food-placeholder {
+    position: relative;
+    width: 200px; /* Adjust the width as needed */
+    height: 300px; /* Adjust the height as needed */
+    background-color: rgba(255, 255, 255, 0.7); /* Glassy effect with opacity */
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px; /* Adjust the margin as needed */
+  }
+  
+  .food-placeholder img {
+    width: 100%;
+    height: 60%; /* Adjust the height as needed */
+    object-fit: cover;
+  }
+  
+  .food-details {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .food-details h3 {
+    margin: 0;
+    font-family: 'Special Font', sans-serif; /* Use your special font here */
+    font-size: 1.2em;
+  }
+  
+  .food-details p {
+    margin: 5px 0;
+    font-size: 1em;
+  }
+  .food-row {
+    display: flex;
+    justify-content: space-around; /* Proper spacing between placeholders */
+    flex-wrap: wrap; /* Allow wrapping to the next line */
+  }
+  
+  .food-placeholder {
+    width: calc(25% - 40px); /* 25% width for each placeholder with margin */
+    /* Adjust the margin as needed */
+    margin: 20px;
+    /* Your existing styles for the food placeholder */
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+  
+  .food-placeholder:hover {
+    transform: translateY(-10px); /* Move the placeholder up by 10px */
+  }
+  

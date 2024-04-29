@@ -1,0 +1,49 @@
+<mat-dialog-content>
+  <mat-tab-group>
+    <!-- Login Tab -->
+    <mat-tab label="Login">
+      <!-- Login form here -->
+      <form class="form" (ngSubmit)="login(email.value, password.value)">
+        <mat-form-field>
+          <input matInput placeholder="Email" #email>
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Password" type="password" #password>
+        </mat-form-field>
+        <div class="button-container">
+          <button mat-raised-button color="primary" type="submit">Login</button>
+        </div>
+      </form>
+    </mat-tab>
+    
+    <!-- Register Tab -->
+    <mat-tab label="Register">
+      <!-- Registration form here -->
+      <form class="form" (ngSubmit)="register()">
+        <mat-form-field>
+          <input matInput placeholder="First Name" [(ngModel)]="user.firstName" name="firstName" required>
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Last Name" [(ngModel)]="user.lastName" name="lastName" required>
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Email" [(ngModel)]="user.email" name="email" required>
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Password" [(ngModel)]="user.password" name="password" type="password" required>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Role</mat-label>
+          <mat-select [(ngModel)]="user.role" name="role" required>
+            <mat-option value="USER">User</mat-option>
+            <mat-option value="THEATER_OWNER">Theater_Owner</mat-option>
+            <mat-option value="PRODUCT_OWNER">Product_Owner</mat-option> <!-- New role option -->
+          </mat-select>
+        </mat-form-field>
+        <div class="button-container">
+          <button mat-raised-button color="primary" type="submit">Register</button>
+        </div>
+      </form>
+    </mat-tab>
+  </mat-tab-group>
+</mat-dialog-content>

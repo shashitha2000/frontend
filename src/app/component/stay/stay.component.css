@@ -1,0 +1,79 @@
+.background-image-container {
+    background-image: url('https://i.postimg.cc/L4VtMb0c/best-hotel-views-in-the-world-1.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .background-image-container {
+    background-image: url('https://i.postimg.cc/L4VtMb0c/best-hotel-views-in-the-world-1.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .placeholder {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+  }
+  
+  .placeholder:hover img {
+    transform: scale(1.1);
+  }
+  
+  .placeholder .description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .placeholder .description h3 {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  .placeholder .description p {
+    margin: 5px 0 0;
+    font-size: 0.8em;
+    color: #666;
+  }
+  .stars {
+    color: gold;
+  }
+  .placeholder:hover {
+    transform: scale(1.05); /* Scale up on hover */
+  }
+  
+  .placeholder:hover .description {
+    background-color: rgba(255, 255, 255, 0.9); /* Lighten the background on hover */
+  }

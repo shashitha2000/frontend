@@ -1,0 +1,83 @@
+.movie-details {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .movie-details img {
+    width: 150px;
+    height: 200px;
+    margin-right: 20px;
+  }
+  
+  .movie-description {
+    color: white;
+  }
+  
+  .mat-form-field {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .mat-form-field .mat-form-field-label {
+    color: rgb(16, 16, 16);
+  }
+  
+  .mat-form-field .mat-form-field-underline {
+    color: white;
+  }
+  
+  .mat-form-field .mat-form-field-ripple {
+    color: white;
+  }
+  
+  .mat-form-field .mat-form-field-infix {
+    color: white;
+  }
+  
+  .mat-form-field .mat-form-field-prefix {
+    color: white;
+  }
+  
+  .mat-form-field .mat-form-field-suffix {
+    color: white;
+  }
+  /* ticket-reservation.component.css */
+
+:host {
+    background-color: black; /* Set the background color of the component */
+    color: white; /* Set the text color */
+  }
+  
+  .mat-form-field {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .mat-form-field .mat-form-field-label {
+    color: white; /* Set the label text color */
+  }
+  
+  .mat-form-field .mat-form-field-underline {
+    color: white; /* Set the underline color */
+  }
+  
+  .mat-form-field .mat-form-field-ripple {
+    color: white; /* Set the ripple color */
+  }
+  
+  .mat-form-field .mat-form-field-infix {
+    color: white; /* Set the text color of the input field */
+  }
+  
+  .mat-form-field .mat-form-field-prefix {
+    color: white; /* Set the prefix icon color */
+  }
+  
+  .mat-form-field .mat-form-field-suffix {
+    color: white; /* Set the suffix icon color */
+  }
+  
+  .error-message {
+    color: red; /* Set the error message color */
+  }
+  

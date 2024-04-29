@@ -1,0 +1,15 @@
+<div class="background-image-container">
+  <div class="movie-container">
+    <div class="movie-card" *ngFor="let movie of movies" (click)="openTicketReservationDialog(movie)">
+      <div class="movie-image"></div>
+      <div class="movie-details">
+        <div class="movie-name">{{ movie.filmName }}</div>
+        <div class="movie-description">{{ movie.description }}</div>
+        <div class="movie-info">
+          <div class="movie-showtime">Showtime: {{ movie.showTime }}</div>
+          <div class="movie-duration">Duration: {{ movie.duration }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+/* Styles for the dialog */
+:host {
+    display: block;
+    padding: 20px;
+  }
+  
+  /* Styles for the form */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 8px;
+  }
+  
+  input, textarea {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    margin-top: 16px;
+  }
+  

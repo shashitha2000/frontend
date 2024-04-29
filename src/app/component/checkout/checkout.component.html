@@ -1,0 +1,14 @@
+<div class="checkout-container">
+    <h1>Order Summary</h1>
+    <div class="reservation-details">
+      <p><strong>Name:</strong> {{ reservation.name }}</p>
+      <p><strong>Email:</strong> {{ reservation.email }}</p>
+      <p><strong>Reserve Date:</strong> {{ reservation.reserveDate }}</p>
+      <p><strong>Reserve Time:</strong> {{ reservation.reserveTime }}</p>
+      <p><strong>Price Range:</strong> {{ reservation.priceRange }}</p>
+      <p><strong>Number of Tickets:</strong> {{ reservation.numberOfTickets }}</p>
+    </div>
+    <p class="total">Total: Rs{{ totalSum }}</p>
+    <button class="checkout-button">Proceed to Payment</button>
+  </div>
+  

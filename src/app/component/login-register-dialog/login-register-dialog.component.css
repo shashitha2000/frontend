@@ -1,0 +1,16 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
+  }
+  
+  .button-container {
+    margin-top: auto; /* Push the button to the bottom */
+  }
+  /* Set the width and height of the dialog content */
+.mat-dialog-content {
+    width: 400px; /* Set the desired width */
+    height: 300px; /* Set the desired height */
+  }
+  

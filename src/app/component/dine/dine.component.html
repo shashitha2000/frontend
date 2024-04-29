@@ -1,0 +1,12 @@
+<div class="slideshow-container">
+    <div *ngFor="let image of images; let i = index" class="slide" [class.active]="i === currentSlideIndex">
+      <img [src]="image.url" alt="Slide {{i}}">
+      <div class="slide-content" *ngIf="i === currentSlideIndex">
+        <h2>Srilankan cuisine</h2>
+        <hr>
+        <p>Insert your aesthetic quote about Srilankan cuisine here.</p>
+        <button (click)="redirectToSrilankanCuisine()">srilankan-cuisine</button>
+      </div>
+    </div>
+  </div>
+  

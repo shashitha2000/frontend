@@ -1,0 +1,142 @@
+.background-image-container {
+    background-image: url('https://i.postimg.cc/pd6PQ7j4/15c857d2cdd7eb6bda0dc916d1f29402.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.7); /* Glassy effect */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .image-placeholder {
+    width: 200px;
+    height: 200px;
+    background-color: #f2f2f2; /* Light grey */
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .details-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .name-placeholder {
+    width: 150px;
+    height: 20px;
+    background-color: #f2f2f2; /* Light grey */
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .price-placeholder {
+    width: 100px;
+    height: 20px;
+    background-color: #f2f2f2; /* Light grey */
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .description-placeholder {
+    width: 250px;
+    height: 50px;
+    background-color: #f2f2f2; /* Light grey */
+    border-radius: 5px;
+  }
+
+  
+  /* carnage.component.css */
+.background-image-container {
+    /* Your existing styles for the background image container */
+  }
+  
+  .placeholder {
+    /* Your existing styles for the product placeholder */
+  }
+  
+  .review-container {
+    margin-top: 20px; /* Adjust the margin as needed */
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .review-container h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .review-container label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  .review-container input[type="number"],
+  .review-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  .review-container textarea {
+    resize: vertical; /* Allow vertical resizing of textarea */
+  }
+  
+  .review-container button {
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+  }
+  
+  .review-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  .review-container button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .review-container button:not(:disabled):hover {
+    filter: brightness(110%);
+  }
+  
+  /* Optional: Add animation for a smoother appearance */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .review-container {
+    animation: fadeIn 0.5s ease;
+  }
+  

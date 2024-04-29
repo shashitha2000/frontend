@@ -1,0 +1,40 @@
+.background-image-container {
+    background-image: url('https://i.postimg.cc/Vk2yp4N1/istockphoto-932542786-612x612.jpg'); /* Replace 'path_to_your_image.jpg' with the actual path to your image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+}
+.text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: Romain BP Headline Regular, serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  .text-container hr {
+    border: none;
+    border-top: 2px solid white;
+    width: 50%;
+    margin: 10px auto;
+  }
+  
+  .main-text {
+    font-size: 46px;
+    line-height: 46px;
+    letter-spacing: 1.5px;
+  }
+  
+  .sub-text {
+    font-size: 16px;
+    display: block;
+  }
+  
+  .clock-icon {
+    font-size: 20px;
+    margin-left: 10px;
+  }
