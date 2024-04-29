@@ -1,39 +1,50 @@
-<form *ngIf="movieForm" [formGroup]="movieForm" (ngSubmit)="onSubmit()">
-    <mat-form-field appearance="fill">
+<h1 class="form-heading">Hello PVR, What's New</h1>
+
+<form *ngIf="movieForm" [formGroup]="movieForm" (ngSubmit)="onSubmit()" class="movie-form">
+  <div class="row">
+    <mat-form-field appearance="fill" class="half-width">
       <mat-label>Film Name</mat-label>
       <input matInput formControlName="filmName" required>
       <mat-error *ngIf="movieForm.get('filmName')?.hasError('required')">Film Name is required</mat-error>
     </mat-form-field>
-    <mat-form-field appearance="fill">
+    <mat-form-field appearance="fill" class="half-width">
       <mat-label>Description</mat-label>
       <textarea matInput formControlName="description" required></textarea>
       <mat-error *ngIf="movieForm.get('description')?.hasError('required')">Description is required</mat-error>
     </mat-form-field>
-    <mat-form-field appearance="fill">
+  </div>
+  <div class="row">
+    <mat-form-field appearance="fill" class="half-width">
       <mat-label>Show Time</mat-label>
       <input matInput formControlName="showTime" required>
       <mat-error *ngIf="movieForm.get('showTime')?.hasError('required')">Show Time is required</mat-error>
     </mat-form-field>
-    <mat-form-field appearance="fill">
+    <mat-form-field appearance="fill" class="half-width">
       <mat-label>Image URL</mat-label>
       <input matInput formControlName="img" required>
       <mat-error *ngIf="movieForm.get('img')?.hasError('required')">Image URL is required</mat-error>
     </mat-form-field>
-    <mat-form-field appearance="fill">
+  </div>
+  <div class="row">
+    <mat-form-field appearance="fill" class="half-width">
       <mat-label>Duration</mat-label>
       <input matInput formControlName="duration" required>
       <mat-error *ngIf="movieForm.get('duration')?.hasError('required')">Duration is required</mat-error>
     </mat-form-field>
-    <mat-form-field appearance="fill">
+    <mat-form-field appearance="fill" class="half-width">
       <mat-label>Seats</mat-label>
       <input matInput type="number" formControlName="seats" required>
       <mat-error *ngIf="movieForm.get('seats')?.hasError('required')">Seats is required</mat-error>
     </mat-form-field>
-    <mat-form-field appearance="fill">
+  </div>
+  <div class="row">
+    <mat-form-field appearance="fill" class="half-width">
       <mat-label>Date</mat-label>
       <input matInput type="date" formControlName="date" required>
       <mat-error *ngIf="movieForm.get('date')?.hasError('required')">Date is required</mat-error>
     </mat-form-field>
-    <button mat-raised-button color="primary" type="submit">Add Movie</button>
-  </form>
-  
+    <!-- Add more fields here -->
+  </div>
+  <button mat-raised-button color="primary" type="submit">Add Movie</button>
+  <p *ngIf="movieAdded" class="success-message">Movie successfully added!</p>
+</form>

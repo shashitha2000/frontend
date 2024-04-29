@@ -9,7 +9,7 @@ import { MovieService } from 'src/app/service/movie.service';
 })
 export class MovieAddComponent implements OnInit {
   movieForm: FormGroup = new FormGroup({});
-
+  movieAdded: boolean = false;
 
   constructor(private formBuilder: FormBuilder, private movieService: MovieService) {}
 
@@ -30,6 +30,7 @@ export class MovieAddComponent implements OnInit {
       this.movieService.addMovie(this.movieForm.value).subscribe(
         (response) => {
           console.log('Movie added successfully:', response);
+          this.movieAdded = true; // Set flag to true
           // Optionally, reset the form after successful submission
           this.movieForm.reset();
         },
