@@ -1,0 +1,9 @@
+.logo-slider {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .logo {
+    margin-bottom: 10px; /* Adjust spacing between logos */
+  }
+  

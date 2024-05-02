@@ -99,3 +99,8 @@
   color: #ffffff; /* White font color on hover */
   background-color: #d7cfcf; /* Black background color on hover */
 }
+.mat-drawer-container {
+  background-color: rgba(192, 192, 192, 0.5); /* Semi-transparent grey */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+

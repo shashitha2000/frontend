@@ -9,12 +9,15 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatTabsModule } from '@angular/material/tabs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
+import { WebcamModule } from 'ngx-webcam';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AuthDialogComponent } from './auth-dialog/auth-dialog.component';
 import { AdminComponent } from './component/admin/admin.component';
+import { ArViewerComponent } from './component/ar-viewer/ar-viewer.component';
 import { AssociateComponent } from './component/associate/associate.component';
 import { AutocompleteComponent } from './component/autocomplete/autocomplete.component';
+import { BotuiComponent } from './component/botui/botui.component';
 import { CardComponent } from './component/card/card.component';
 import { CarnageComponent } from './component/carnage/carnage.component';
 import { CartComponent } from './component/cart/cart.component';
@@ -25,8 +28,11 @@ import { DineComponent } from './component/dine/dine.component';
 import { FormdesignComponent } from './component/formdesign/formdesign.component';
 import { HomeComponent } from './component/home/home.component';
 import { LoginRegisterDialogComponent } from './component/login-register-dialog/login-register-dialog.component';
+import { LogoSliderComponent } from './component/logo-slider/logo-slider.component';
+import { ManageProductsComponent } from './component/manage-products/manage-products.component';
 import { MenubarComponent } from './component/menubar/menubar.component';
 import { MovieAddComponent } from './component/movie-add/movie-add.component';
+import { OffersComponent } from './component/offers/offers.component';
 import { PopupComponent } from './component/popup/popup.component';
 import { PVRCinemaComponent } from './component/pvr-cinema/pvr-cinema.component';
 import { ShopComponent } from './component/shop/shop.component';
@@ -40,9 +46,6 @@ import { UserdetailComponent } from './component/userdetail/userdetail.component
 import { InputComponent } from './input/input.component';
 import { MaterialModule } from './material-module';
 import { MockAuthService } from './service/mock-auth.service';
-import { OffersComponent } from './component/offers/offers.component';
-import { ManageProductsComponent } from './component/manage-products/manage-products.component';
-
 
 
 @NgModule({
@@ -77,6 +80,9 @@ import { ManageProductsComponent } from './component/manage-products/manage-prod
     ClothShopOwnerComponent,
     OffersComponent,
     ManageProductsComponent,
+    LogoSliderComponent,
+    BotuiComponent,
+    ArViewerComponent,
   ],
   imports: [
     BrowserModule,
@@ -91,6 +97,7 @@ import { ManageProductsComponent } from './component/manage-products/manage-prod
     MatDatepickerModule,
     MatSelectModule,
     MatNativeDateModule,
+    WebcamModule
     
     
     

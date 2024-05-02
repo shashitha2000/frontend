@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ArViewerComponent } from './component/ar-viewer/ar-viewer.component';
 import { AssociateComponent } from './component/associate/associate.component';
 import { CarnageComponent } from './component/carnage/carnage.component';
 import { CartComponent } from './component/cart/cart.component';
@@ -42,7 +43,8 @@ const routes: Routes = [
   { path: 'carnage',component:CarnageComponent},
   { path: 'cloth-shop-owner',component:ClothShopOwnerComponent},
   { path: 'offers',component:OffersComponent},
-  { path: 'manage-products',component:ManageProductsComponent}
+  { path: 'manage-products',component:ManageProductsComponent},
+  { path: 'ar-viewer',component:ArViewerComponent}
 ];
 
 @NgModule({
