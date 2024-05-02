@@ -1,0 +1,13 @@
+<div class="product-container">
+    <div class="product-card" *ngFor="let product of products">
+      <h3>{{ product.name }}</h3>
+      <p *ngIf="!editMode[product.id]">{{ product.description }}</p>
+      <input *ngIf="editMode[product.id]" type="text" [ngModel]="editedProductData[product.id]?.description" (ngModelChange)="updateEditedProductDescription(product.id, $event)">
+      <p>{{ product.price }}</p>
+      <button class="btn btn-update" (click)="editMode[product.id] ? updateProduct(product.id) : enterEditMode(product.id, product)">
+        {{ editMode[product.id] ? 'Save' : 'Edit' }}
+      </button>
+      <button class="btn btn-delete" (click)="deleteProduct(product.id)">Delete</button>
+    </div>
+  </div>
+  

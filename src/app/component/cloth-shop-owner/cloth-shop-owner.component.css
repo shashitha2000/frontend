@@ -1,27 +1,91 @@
 /* Styles for the dialog */
 :host {
-    display: block;
-    padding: 20px;
+  display: block;
+  padding: 20px;
+  position: relative;
+  background-image: url('https://i.postimg.cc/qRkMkPyw/grey-and-white-abstract-pattern-geometric-background-hd-images-ittcscskrb.jpg');
+  background-size: cover; /* Cover the entire background */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+}
+
+/* Styles for the form */
+form {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 80px; /* Adjusted for the heading height */
+  right: 20px;
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+input,
+textarea {
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  margin-top: 16px;
+}
+
+/* Animation for the heading */
+#heading {
+  font-family: 'Your Elegant Font', sans-serif; /* Use an elegant font */
+  font-size: 2rem; /* Adjust font size as needed */
+  color: #333; /* Set text color to a dark shade for elegance */
+  margin: 0; /* Reset margin for the heading */
+  position: relative; /* Set position to relative for absolute positioning of shine */
+}
+
+#heading::before {
+  content: ''; /* Create a pseudo-element for the shine effect */
+  position: absolute; /* Position the shine absolutely */
+  top: 0; /* Align the shine to the top of the text */
+  left: -100%; /* Start the shine outside the text */
+  width: 100%; /* Set the initial width to 100% */
+  height: 100%; /* Set the height to cover the text */
+  background: linear-gradient(to right, transparent 0%, #ffffff 50%, transparent 100%); /* Create a gradient for the shine effect */
+  animation: shine 2s infinite; /* Apply the shine animation */
+}
+
+@keyframes shine {
+  0% {
+    left: -100%; /* Start the shine outside the text */
   }
-  
-  /* Styles for the form */
-  form {
-    display: flex;
-    flex-direction: column;
+  100% {
+    left: 100%; /* Move the shine to the right */
   }
-  
-  label {
-    margin-bottom: 8px;
-  }
-  
-  input, textarea {
-    padding: 8px;
-    margin-bottom: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  button {
-    margin-top: 16px;
-  }
-  
+}
+/* Button bar styles */
+.button-bar {
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+  margin-top: 50px;
+}
+
+.button-bar button {
+  padding: 8px 16px; /* Padding inside the button */
+  margin: 0 8px; /* Margin between buttons */
+  border: none;
+  border-radius: 20px; /* Round the button corners */
+  background-color: #000000; /* Green background color */
+  color: white; /* White text color */
+  font-size: 1rem; /* Button text size */
+  cursor: pointer; /* Show pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.button-bar button:hover {
+  background-color: #45a049; /* Darker green background color on hover */
+}

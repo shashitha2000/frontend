@@ -41,6 +41,7 @@ import { InputComponent } from './input/input.component';
 import { MaterialModule } from './material-module';
 import { MockAuthService } from './service/mock-auth.service';
 import { OffersComponent } from './component/offers/offers.component';
+import { ManageProductsComponent } from './component/manage-products/manage-products.component';
 
 
 
@@ -75,6 +76,7 @@ import { OffersComponent } from './component/offers/offers.component';
     CarnageComponent,
     ClothShopOwnerComponent,
     OffersComponent,
+    ManageProductsComponent,
   ],
   imports: [
     BrowserModule,

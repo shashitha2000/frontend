@@ -10,6 +10,7 @@ import { DineComponent } from './component/dine/dine.component';
 import { FormdesignComponent } from './component/formdesign/formdesign.component';
 import { HomeComponent } from './component/home/home.component';
 import { LoginRegisterDialogComponent } from './component/login-register-dialog/login-register-dialog.component';
+import { ManageProductsComponent } from './component/manage-products/manage-products.component';
 import { MovieAddComponent } from './component/movie-add/movie-add.component';
 import { OffersComponent } from './component/offers/offers.component';
 import { PVRCinemaComponent } from './component/pvr-cinema/pvr-cinema.component';
@@ -40,7 +41,8 @@ const routes: Routes = [
   { path: 'add-movie',component:MovieAddComponent},
   { path: 'carnage',component:CarnageComponent},
   { path: 'cloth-shop-owner',component:ClothShopOwnerComponent},
-  { path: 'offers',component:OffersComponent}
+  { path: 'offers',component:OffersComponent},
+  { path: 'manage-products',component:ManageProductsComponent}
 ];
 
 @NgModule({
